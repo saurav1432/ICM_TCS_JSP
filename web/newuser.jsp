@@ -84,7 +84,7 @@
                 </style>
         
     </head>
-    <body>
+    <body bgcolor="#E6E6FA">
         <center>
             <h2><b>Registration Form</b></h2>
         <form name="myform" action="deatail_save.jsp" method="post" onsubmit=" return validate()">
