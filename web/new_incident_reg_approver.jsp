@@ -15,7 +15,7 @@
         
          <style>
              .dropbtn {
-    background-color: #4CAF5;  
+    background-color: #4CAF50;  
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -100,7 +100,7 @@ window.onclick = function(event) {
 }
 </script>
     </head>
-    <body>
+    <body bgcolor="#E6E6FA">
      <%
             response.addHeader("Cache-Control", "no-cache,no-store,private,must-revalidate,max-stale=0,post-check=0,pre-check=0"); 
             response.addHeader("Pragma", "no-cache"); 
@@ -195,7 +195,7 @@ window.onclick = function(event) {
                 <td width="150" height="25"><center><%out.println(a5); %></center></td>
                 <td width="150" height="25"><center><%out.println(a3); %></center></td>
                 <td width="150" height="25"> <center><%out.println(a4); %></center></td>
-      <td width="100" height="25"><input type="radio" value="Under Process" required="" name="app_status">Under Process <br><input type="radio" value="Processed" required="" name="app_status">Processed</td>
+                <td width="100" height="25"> <center><%out.println("Under Process"); %></center></td>
                 <td><center><input id="round" type="submit" value="update<%=a7%>" name="update_submit"/></center></td>
                 </tr>
                 </form>
@@ -332,7 +332,7 @@ window.onclick = function(event) {
                  <td width="150" height="25"><center><%out.println(a5); %></center></td>
                  <td width="150" height="25"><center><%out.println(a3); %></center></td>
                  <td width="150" height="25"> <center><%out.println(a4); %></center></td>
-                 <td width="150" height="25"><input type="radio" value="Under Process" required="" name="app_status">Under Process <br><input type="radio" value="Processed" required="" name="app_status">Processed</td>
+                 <td width="150" height="25"> <center><%out.println("Under Process"); %></td>
                  <td><center><input id="round" type="submit" value="update<%=a7%>" name="update_submit"/></center></td>
               </tr>
             </form>
