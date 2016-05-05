@@ -13,7 +13,7 @@
 <style>
 .dropbtn 
 {
-    background-color: #4CAF5;  
+    background-color: #4CAF50;  
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -114,7 +114,7 @@ function myFunction()
 }
 </script>
 </head>
-<body>
+<body bgcolor="#E6E6FA">
         <%
                 response.setHeader("Cache-Control","no-cache");
                 response.setHeader("Cache-Control","no-store");
