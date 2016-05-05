@@ -14,7 +14,7 @@
         <title>Status Page</title>
        <style>
             .dropbtn {
-    background-color: #4CAF5;  
+    background-color: #4CAF50;  
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -99,7 +99,7 @@ window.onclick = function(event) {
 }
 </script>
     </head>
-    <body>
+    <body bgcolor="#E6E6FA">
         <%
             response.addHeader("Cache-Control", "no-cache,no-store,private,must-revalidate,max-stale=0,post-check=0,pre-check=0"); 
             response.addHeader("Pragma", "no-cache"); 
@@ -146,6 +146,7 @@ window.onclick = function(event) {
                 <th width="100" height="25">CATEGORY </th>
                 <th width="200" height="25">DESCRIPTION</th>
                 <th width="50" height="25">URL</th>
+                <th width="60" height="25">ER_Id </th>
                 <th width="200" height="25">DATE</th>
                 <th width="200" height="25">TIME</th>
                 <th width="200" height="25">STATUS</th>
@@ -162,6 +163,7 @@ window.onclick = function(event) {
                String a6=rs.getString(6); //time
                String a7=rs.getString(7); //url
                String a9=rs.getString(9); //category
+               
                if(a1.equals(username))
                {
                    //out.println(" hello ");
@@ -174,11 +176,12 @@ window.onclick = function(event) {
                %>
                <form  action="status_maker_update.jsp" method="post" >
                    <tr>
-                   <td width="200" height="25"><center><% out.println(i);%></center></td>    
+                   <td width="200" height="25"><center><% out.println(i);%></center></td>   
                    <td width="200" height="25"> <textarea  rows="4" cols="30" name="update_error" required="" ><% out.println(a2);%></textarea></td>
                    <td width="50" height="25"> <input type="text" size="10" style="height: 58px" name="update_category" required="" value="<% out.println(a9);%>"</td>
                    <td width="200" height="25"><textarea  rows="4" cols="40" name="update_description" required="" ><% out.println(a4);%></textarea></td>
                    <td width="100" height="25"> <input type="text" size="15" style="height: 58px" name="update_url" required="" value="<% out.println(a7);%>"></td>
+                    <td width="200" height="25"><center><% out.println(a8);%></center></td>
                    <td width="200" height="25"><center><% out.println(a5);%></center></td>
                    <td width="200" height="25"> <center><% out.println(a6);%></center></td>
                    <td width="200" height="25"><center><% out.println(a3);%></center></td>
